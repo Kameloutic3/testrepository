@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root {
+    --bkg-body: #99BFB3;
+}
+
+body {
+    background-color: var(--bkg-body);
+    font-family: Arial;
+}
+
+
+
+.area-header {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100vw;
+}
+
+.area-header h1 {
+    text-align: center;
+    color: #FFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.713);
+}
+
+.area-content {
+    margin-bottom: 20px;
+    width: 500px; height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.398);
+    margin: auto;
+    background-color: #FFF;
+}
+
+.area-input {
+    display: flex;
+}
+
+
+.input-p {
+    font-size: 16px;
+}
+
+.flex {
+    display: block;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.area-input input {
+    margin-top: 5px;
+    width: 300px; height: 25px;
+    outline: 0px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.371);
+}
+
+
+
+.area-sexo {
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+}
+
+
+.area-sexo p {
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.area-sexo input {
+    margin-right: 5px;
+}
+
+.conteudo-2 > p {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.input-flex {
+    display: flex;
+}
+
+button {
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.289);
+    cursor: pointer;
+    background-color: #E2C547;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.179);
+}
+
+ button:hover {
+    background-color: #e2c647de;
+}
+
+.footer-p {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.686);
+}
+
+.area-p {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.foto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.foto img {
+    width: 300px; height: 200px;
+    display: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.33);
+}
+
+@media (min-width: 0px) and (max-width: 510px) {
+    .area-content {
+        padding: 10px;
+    }
+    .area-content {
+       width: 100%;
+       height: auto;
+    }
+    .area-sexo {
+        flex-direction: column;
+    }
+    .input-flex {
+        margin: 5px;
+    }
+    .foto , .area-p {
+        margin: 0px auto;
+    }
+
+    .p {
+        font-size: 15px;
+        padding: 10px;
+    }
+   
+}
